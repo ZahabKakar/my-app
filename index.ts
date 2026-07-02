@@ -1,16 +1,16 @@
-import concurrently from "concurrently";
+import concurrently from 'concurrently';
 
 concurrently([
   {
-    name: "server",
-    command: "bun run dev",
-    cwd: "packages/server",
-    prefixColor: "Cyan",
+    name: 'server',
+    command: 'bun run dev',
+    cwd: 'packages/server',
+    prefixColor: 'Cyan',
   },
   {
-    name: "client",
-    command: "bun run dev",
-    cwd: "packages/client",
-    prefixColor: "Green",
+    name: 'client',
+    command: 'bun run dev',
+    cwd: 'packages/client',
+    prefixColor: 'Green',
   },
 ]);
